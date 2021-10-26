@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="msapplication-tap-highlight" content="no">
-        <title>Login | </title>
+        <title>Login | Antrian</title>
         <link rel="icon" href="<?php echo e(asset('assets/favicon.ico')); ?>">
 
         <link href="<?php echo e(asset('assets/css/materialize.min.css')); ?>"type="text/css" rel="stylesheet" media="screen,projection">
