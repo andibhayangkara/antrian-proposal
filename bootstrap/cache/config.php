@@ -222,7 +222,7 @@
       'sqlite' => 
       array (
         'driver' => 'sqlite',
-        'database' => 'antrian',
+        'database' => 'Antrian',
         'prefix' => '',
       ),
       'mysql' => 
@@ -230,7 +230,7 @@
         'driver' => 'mysql',
         'host' => 'localhost',
         'port' => '3306',
-        'database' => 'antrian',
+        'database' => 'Antrian',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -244,7 +244,7 @@
         'driver' => 'pgsql',
         'host' => 'localhost',
         'port' => '3306',
-        'database' => 'antrian',
+        'database' => 'Antrian',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
