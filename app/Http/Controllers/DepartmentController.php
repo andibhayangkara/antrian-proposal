@@ -42,7 +42,7 @@ class DepartmentController extends Controller
 
         Department::create($request->all());
 
-        flash()->success('Department created');
+        flash()->success('Berhasil menambah Jenis Pelayanan');
         return redirect()->route('departments.index');
     }
 
@@ -69,7 +69,7 @@ class DepartmentController extends Controller
         $department->start = $request->start;
         $department->save();
 
-        flash()->success('Department updated');
+        flash()->success('Berhasil Mengubah Jenis Pelayanan');
         return redirect()->route('departments.index');
     }
 
@@ -79,7 +79,7 @@ class DepartmentController extends Controller
 
         $department->delete();
 
-        flash()->success('Department deleted');
+        flash()->success('Berhasil menghapus Jenis Pelayanan');
         return redirect()->route('departments.index');
     }
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="msapplication-tap-highlight" content="no">
-        <title>Login | Antrian</title>
+        <title>Login | </title>
         <link rel="icon" href="<?php echo e(asset('assets/favicon.ico')); ?>">
 
         <link href="<?php echo e(asset('assets/css/materialize.min.css')); ?>"type="text/css" rel="stylesheet" media="screen,projection">
@@ -60,22 +60,22 @@
                             <label for="password">Password</label>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12 m12 l12  login-text">
                             <input type="checkbox" id="remember-me" name="remember">
                             <label for="remember-me">Remember me</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="input-field col s12">
                             <button type="submit" class="btn waves-effect waves-light col s12">Log in</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12 m12 l12">
                             <p class="margin medium-small"><a href="<?php echo e(route('get_email')); ?>">Forgot password ?</a></p>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="row center-align white-text" style="margin-bottom:0">

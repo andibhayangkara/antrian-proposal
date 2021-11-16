@@ -59,22 +59,22 @@
                             <label for="password">Password</label>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12 m12 l12  login-text">
                             <input type="checkbox" id="remember-me" name="remember">
                             <label for="remember-me">Remember me</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="input-field col s12">
                             <button type="submit" class="btn waves-effect waves-light col s12">Log in</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12 m12 l12">
                             <p class="margin medium-small"><a href="{{ route('get_email') }}">Forgot password ?</a></p>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="row center-align white-text" style="margin-bottom:0">

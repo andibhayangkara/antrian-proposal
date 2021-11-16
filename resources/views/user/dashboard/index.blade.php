@@ -24,7 +24,7 @@
         <div id="card-stats">
             @can('access', \App\Models\User::class)
                 <div class="row">
-                    <div class="col s12 m6 l3">
+                    <div class="col s12 m6 l53">
                         <div class="card hoverable">
                             <div class="card-content light-blue darken-2 white-text">
                                 <p class="card-stats-title truncate"><i class="mdi-social-group-add"></i> {{ trans('messages.today_queue') }}</p>
@@ -32,13 +32,13 @@
                                 </p>
                             </div>
                             <div class="card-action light-blue darken-4">
-                                <div class="center-align">
+                                <!-- <div class="center-align">
                                     <a href="{{ route('reports::queue_list', ['date' => \Carbon\Carbon::now()->format('d-m-Y')]) }}" style="text-transform:none;color:#fff">{{ trans('messages.more_info') }} <i class="mdi-navigation-arrow-forward"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l3">
+                    <!-- <div class="col s12 m6 l3">
                         <div class="card hoverable">
                             <div class="card-content green lighten-1 white-text">
                                 <p class="card-stats-title truncate"><i class="mdi-communication-call-missed"></i> {{ trans('messages.today_missed') }}</p>
@@ -51,8 +51,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 m6 l3">
+                    </div> -->
+                    <div class="col s12 m6 l53">
                         <div class="card hoverable">
                             <div class="card-content blue-grey white-text">
                                 <p class="card-stats-title truncate"><i class="mdi-action-trending-up"></i> {{ trans('messages.today_served') }}</p>
@@ -60,9 +60,9 @@
                                 </p>
                             </div>
                             <div class="card-action blue-grey darken-2">
-                                <div class="center-align">
+                                <!-- <div class="center-align">
                                     <a href="{{ route('reports::missed_show', ['date' => \Carbon\Carbon::now()->format('d-m-Y'), 'user' => 'all', 'counter' => 'all', 'type' => 'all']) }}" style="text-transform:none;color:#fff">{{ trans('messages.more_info') }} <i class="mdi-navigation-arrow-forward"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
             @endcan -->
 
             <div class="row">
-                <div class="col s12">
+                <div class="col s12 m12">
                     <div class="card hoverable waves-effect waves-dark" style="display:inherit">
                         <div class="card-move-up black-text">
                             <div class="move-up">

@@ -54,7 +54,7 @@ class AddToQueueController extends Controller
         $request->session()->flash('number', ($department->letter!='')?$department->letter.'-'.$queue->number:$queue->number);
         $request->session()->flash('total', $total);
 
-        flash()->success('Token Added');
+        flash()->success('Berhasil Mengambil Antrian');
         return redirect()->route('add_to_queue');
     }
 }

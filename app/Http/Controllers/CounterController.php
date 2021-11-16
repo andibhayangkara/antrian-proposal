@@ -41,7 +41,7 @@ class CounterController extends Controller
 
         Counter::create($request->all());
 
-        flash()->success('Counter created');
+        flash()->success('Berhasil Menambah Loket');
         return redirect()->route('counters.index');
     }
 
@@ -65,7 +65,7 @@ class CounterController extends Controller
         $counter->name = $request->name;
         $counter->save();
 
-        flash()->success('Counter updated');
+        flash()->success('Berhasil edit Loket');
         return redirect()->route('counters.index');
     }
 
@@ -75,7 +75,7 @@ class CounterController extends Controller
 
         $counter->delete();
 
-        flash()->success('Counter deleted');
+        flash()->success('Loket dihapus');
         return redirect()->route('counters.index');
     }
 }

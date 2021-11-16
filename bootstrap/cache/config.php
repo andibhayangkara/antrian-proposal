@@ -228,11 +228,11 @@
       'mysql' => 
       array (
         'driver' => 'mysql',
-        'host' => '45.130.231.234',
+        'host' => 'localhost',
         'port' => '3306',
-        'database' => 'n1001028_antrian',
-        'username' => 'n1001028_antrian',
-        'password' => 'Zo$f,KqY11uL',
+        'database' => 'antrian',
+        'username' => 'root',
+        'password' => '',
         'charset' => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix' => '',

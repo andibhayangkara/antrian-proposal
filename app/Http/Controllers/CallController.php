@@ -45,7 +45,7 @@ class CallController extends Controller
         $queue = $this->calls->getNextToken($department);
 
         if($queue==null) {
-            flash()->warning('No Token for this department');
+            flash()->warning('Tidak ada antrian untuk pelayanan ini');
             return redirect()->route('calls');
         }
 
@@ -66,7 +66,7 @@ class CallController extends Controller
         event(new \App\Events\TokenIssued());
         event(new \App\Events\TokenCalled());
 
-        flash()->success('Token Called');
+        flash()->success('Antrian Berhasil Dipanggil');
         return redirect()->route('calls');
     }
 
@@ -94,7 +94,7 @@ class CallController extends Controller
         $request->session()->flash('number', ($department->letter!='')?$department->letter.'-'.$queue->number:$queue->number);
         $request->session()->flash('total', $total);
 
-        flash()->success('Token Added');
+        flash()->success('Berhasil Mengambil Antrian');
         return redirect()->route('calls');
     }
 
@@ -108,7 +108,7 @@ class CallController extends Controller
 
         event(new \App\Events\TokenCalled());
 
-        flash()->success('Token Called');
+        flash()->success('Antrian Berhasil Dipanggil Ulang');
         return $new_call->toJson();
     }
 }
